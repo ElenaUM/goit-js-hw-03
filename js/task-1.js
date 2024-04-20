@@ -1,4 +1,7 @@
-function slugify(title) {}
+function slugify(title) {
+  const slug = title.toLowerCase().replaceAll(" ", "-");
+  return slug;
+}
 
 console.log(slugify("Arrays for begginers")); // "arrays-for-begginers"
 console.log(slugify("English for developer")); // "english-for-developer"
